@@ -9,6 +9,7 @@ namespace Sweepstakes
         public void CreateMarketingFirmManager(SweepstakesFactory factory)
         {
             MarketingFirm marketingFirm = new MarketingFirm(factory.ChooseSweepstakesManager(UserInterface.GetUserInputFor("Would you like a Queue or a Stack to manage your Sweepstakes?")));
+            marketingFirm.CreateSweepstakes();
         }
     }
 }

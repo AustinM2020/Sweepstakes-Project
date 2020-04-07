@@ -9,6 +9,5 @@ namespace Sweepstakes
         public void InsertSweepstakes(Sweepstakes sweepstakes);
 
         public Sweepstakes GetSweepstakes();
-
     }
 }

@@ -6,8 +6,9 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
-            Sweepstakes sweepstakes = new Sweepstakes("king");
-            sweepstakes.RegisterContestant();
+            Simulation simulation = new Simulation();
+            simulation.CreateMarketingFirmManager(new SweepstakesFactory());
+            Console.ReadLine();
         }
     }
 }

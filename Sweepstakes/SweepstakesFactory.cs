@@ -16,8 +16,7 @@ namespace Sweepstakes
                     return new SweepstakesStackManager();
                 default:
                     Console.WriteLine("Invalid input please type in either Queue or Stack.");
-                    return ChooseSweepstakesManager(input);
-                    
+                    return ChooseSweepstakesManager(UserInterface.GetUserInputFor("Would you like a Queue or a Stack to manage your Sweepstakes?"));
             }
         }
     }
