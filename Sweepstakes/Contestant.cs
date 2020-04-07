@@ -15,5 +15,9 @@ namespace Sweepstakes
         {
             
         }
+        public void Notify(string input)
+        {
+            Console.WriteLine(input);
+        }
     }
 }
