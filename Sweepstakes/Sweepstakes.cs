@@ -35,10 +35,11 @@ namespace Sweepstakes
                     return contestant.Value;
                 }
             }
+            return PickWinner();
         }
         public void PrintContestantInfo(Contestant contestant)
         {
-            int registrationNum = int.Parse(UserInterface.GetUserInputFor("Please Enter the Registration Number of Requested Contestant"));
+            int registrationNum = int.Parse(UserInterface.GetUserInputFor("Please Enter the Registration Number for Requested Contestant"));
             foreach (KeyValuePair<int, Contestant> info in contestants)
             {
                 if (info.Key == registrationNum)

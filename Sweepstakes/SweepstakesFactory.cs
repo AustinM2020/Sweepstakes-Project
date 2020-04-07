@@ -6,14 +6,18 @@ namespace Sweepstakes
 {
     class SweepstakesFactory
     {
-        public ISweepstakesManager ChooseSweepstakesManager(string input, ISweepstakesManager )
+        public ISweepstakesManager ChooseSweepstakesManager(string input)
         {
             switch (input)
             {
                 case "Queue":
-
-
-
+                    return new SweepstakesQueueManager();
+                case "Stack":
+                    return new SweepstakesStackManager();
+                default:
+                    Console.WriteLine("Invalid input please type in either Queue or Stack.");
+                    return ChooseSweepstakesManager(input);
+                    
             }
         }
     }

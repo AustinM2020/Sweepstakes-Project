@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class SweepstakesQueueManager
+    class SweepstakesQueueManager : ISweepstakesManager
     {
         Queue<Sweepstakes> queue = new Queue<Sweepstakes>();
 
