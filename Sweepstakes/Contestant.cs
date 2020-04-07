@@ -10,5 +10,10 @@ namespace Sweepstakes
         public string LastName;
         public string EmailAddress;
         public int RegistrationNumber;
+
+        public Contestant()
+        {
+            
+        }
     }
 }

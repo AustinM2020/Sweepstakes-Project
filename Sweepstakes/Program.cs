@@ -6,7 +6,8 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
-
+            Sweepstakes sweepstakes = new Sweepstakes("king");
+            sweepstakes.RegisterContestant();
         }
     }
 }

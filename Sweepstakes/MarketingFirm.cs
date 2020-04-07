@@ -6,14 +6,9 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        public MarketingFirm(ISweepstakesManager manager)
+        public void CreateSweepstakes(ISweepstakesManager manager)
         {
-
-        }
-
-        public void CreateSweepstakes()
-        {
-
+            Sweepstakes sweepstakes = new Sweepstakes(UserInterface.GetUserInputFor("What is the Name of your Sweepstakes"));
         }
     }
 }
